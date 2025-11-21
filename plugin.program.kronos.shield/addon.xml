@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.kronos.shield" name="Kronos Shield" version="8.0.8" provider-name="Kronos Team">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <!-- GUI Button Entry -->
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <!-- Background VPN Watchdog -->
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>VPN Protection for Kronos</summary>
+        <description>Kronos Shield is the first of its kind. It Auto-Detects your VPN status and Blocks risky Add-ons when the VPN tunnel is down. No leaks, No warnings — just Pure Protection. Built for Privacy, Wrapped in a Sexy Fullscreen GUI — because even your Privacy deserves Style. Dive in and Take Control.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/media/k_logo.png</icon>
+        </assets>
+    </extension>
+</addon>
